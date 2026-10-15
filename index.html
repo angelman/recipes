@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipes</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main>
+<header>
+<h1>Recipes</h1>
+<p class="subtitle">Every recipe Scout has made for Angel — 13 recipes, all in one place.</p>
+</header>
+<div class="search-wrap">
+<input id="search" type="search" placeholder="Search recipes, ingredients, tags…" aria-label="Search recipes">
+</div>
+<div class="tag-row">
+<button class="tag-filter active" data-tag="">All</button>
+<button class="tag-filter" data-tag="beans">beans</button><button class="tag-filter" data-tag="beef">beef</button><button class="tag-filter" data-tag="chicken">chicken</button><button class="tag-filter" data-tag="chickpea">chickpea</button><button class="tag-filter" data-tag="cuban">cuban</button><button class="tag-filter" data-tag="curry">curry</button><button class="tag-filter" data-tag="family">family</button><button class="tag-filter" data-tag="freezer-friendly">freezer-friendly</button><button class="tag-filter" data-tag="high-fiber">high-fiber</button><button class="tag-filter" data-tag="high-protein">high-protein</button><button class="tag-filter" data-tag="meal-prep">meal-prep</button><button class="tag-filter" data-tag="mediterranean">mediterranean</button><button class="tag-filter" data-tag="no-cook">no-cook</button><button class="tag-filter" data-tag="one-pan">one-pan</button><button class="tag-filter" data-tag="one-pot">one-pot</button><button class="tag-filter" data-tag="pressure-cooker">pressure-cooker</button><button class="tag-filter" data-tag="rice">rice</button><button class="tag-filter" data-tag="salmon">salmon</button><button class="tag-filter" data-tag="spicy">spicy</button><button class="tag-filter" data-tag="thai">thai</button><button class="tag-filter" data-tag="tuna">tuna</button><button class="tag-filter" data-tag="turkey">turkey</button>
+</div>
+<p id="no-results" hidden>No recipes match your search.</p>
+<div class="grid">
+<article class="card" data-search="chipotle turkey &amp; black bean burrito bowls meal-prep turkey high-protein high-fiber 1½ lb ground turkey 2 (15-oz) cans black beans, drained and rinsed 1½ cups dry brown rice 1 bag (16 oz) frozen corn 2 bell peppers, diced 1 red onion, diced 2–3 chipotle peppers in adobo, minced, plus 1 tbsp of the sauce (7-oz can) 4 cloves garlic, minced 2 tsp cumin, 2 tsp smoked paprika, salt 2 limes, juiced plain greek yogurt, for topping 1 tbsp oil">
+<a href="recipes/chipotle-turkey-black-bean-burrito-bowls.html"><h2>Chipotle Turkey &amp; Black Bean Burrito Bowls</h2></a>
+<p class="card-meta">5 portions · ~580 cal, ~46g protein, ~13g fiber per serving <span class="badge cooked">Cooked ✓</span></p>
+<p class="card-intro">Meal-prep burrito bowls with a chipotle kick. The first cook in the meal-prep series.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">turkey</span><span class="tag">high-protein</span><span class="tag">high-fiber</span></div>
+</article><article class="card" data-search="garlic-lime salmon with sesame edamame barley bowls meal-prep salmon high-protein 1.5 lb salmon fillets 1.5 cups pearl barley 2 cups frozen edamame 4 limes garlic low-sodium soy sauce 1 tbsp sesame oil 1 tbsp sesame seeds 4 scallions 1 cucumber">
+<a href="recipes/garlic-lime-salmon-sesame-edamame-barley-bowls.html"><h2>Garlic-Lime Salmon with Sesame Edamame Barley Bowls</h2></a>
+<p class="card-meta">4–6 portions · ~38g protein, 10g fiber, ~580 kcal per serving </p>
+<p class="card-intro">Seared salmon over barley with edamame and a lime-soy dressing. Suggested in the first meal-prep round; not picked.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">salmon</span><span class="tag">high-protein</span></div>
+</article><article class="card" data-search="smoky turkey &amp; lentil chili meal-prep turkey freezer-friendly high-fiber 1.5 lb ground turkey 1.5 cups red lentils 1 large can diced tomatoes 1 onion 2 bell peppers garlic smoked paprika cumin chili powder oregano optional jalapeño">
+<a href="recipes/smoky-turkey-lentil-chili.html"><h2>Smoky Turkey &amp; Lentil Chili</h2></a>
+<p class="card-meta">4–6 portions · ~32g protein, 11g fiber, ~480 kcal per serving </p>
+<p class="card-intro">One-pot chili with red lentils. Suggested in the first meal-prep round; not picked.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">turkey</span><span class="tag">freezer-friendly</span><span class="tag">high-fiber</span></div>
+</article><article class="card" data-search="one-pan chicken &amp; rice (arroz con pollo) chicken one-pan rice 2–3 lbs chicken thighs 2 cups rice 4 cups chicken broth or water 1 red bell pepper, diced ½ medium onion, diced ½ cup carrots, diced 4 garlic cloves, minced 2–3 tbsp butter olive oil 1–2 tbsp chicken bouillon salt, to taste fresh cilantro, for garnish paprika, onion powder, garlic powder, goya adobo seasoning">
+<a href="recipes/one-pan-chicken-rice-arroz-con-pollo.html"><h2>One-Pan Chicken &amp; Rice (Arroz con Pollo)</h2></a>
+<p class="card-meta">Roughly 5–6 · ~600 cal, ~40g protein per serving (estimate) </p>
+<p class="card-intro">One-pan chicken and rice, extracted from the creator&#x27;s post. Tagged #mealprep by the creator.</p>
+<div class="tags"><span class="tag">chicken</span><span class="tag">one-pan</span><span class="tag">rice</span></div>
+</article><article class="card" data-search="spicy short rib coconut curry brothy rice bowls beef pressure-cooker curry 2–2.5 lbs bone-in short ribs kosher salt 1 tbsp neutral oil 3 tbsp red curry paste 2 shallots, halved 4–5 cloves garlic, smashed 4&quot; piece ginger, sliced into coins (no need to peel) 2 tsp soy sauce or tamari 1 tsp fish sauce 1 tbsp brown sugar 3–4 cups beef stock 1 can (13.5 oz) full-fat coconut milk 2 cups cooked rice garnish: thai basil, sliced green onions, sesame seeds, drizzle of chili oil (optional)">
+<a href="recipes/spicy-short-rib-coconut-curry-brothy-rice-bowls.html"><h2>Spicy Short Rib Coconut Curry Brothy Rice Bowls</h2></a>
+<p class="card-meta">See notes ·  </p>
+<p class="card-intro">Braised short rib in a coconut curry broth over rice. Extracted from Brita Cooks&#x27; recipe page.</p>
+<div class="tags"><span class="tag">beef</span><span class="tag">pressure-cooker</span><span class="tag">curry</span></div>
+</article><article class="card" data-search="arroz congrí — mom&#x27;s recipe rice beans cuban family 1 can black beans (15.5 oz) — save the liquid from the can 2 cups long-grain rice 2 tablespoons sofrito 1 bay leaf 2 chicken bouillon cubes 2 cups water + the bean liquid 1/4 cup oil (not olive oil) 1 teaspoon olives and capers (optional) salt (if needed)">
+<a href="recipes/arroz-congri.html"><h2>Arroz Congrí — Mom&#x27;s Recipe</h2></a>
+<p class="card-meta">See notes ·  </p>
+<p class="card-intro">Mom&#x27;s arroz congrí, translated from her Spanish original into plain text for an Apple Note.</p>
+<div class="tags"><span class="tag">rice</span><span class="tag">beans</span><span class="tag">cuban</span><span class="tag">family</span></div>
+</article><article class="card" data-search="greek turkey meatballs with lemon-herb quinoa &amp; tzatziki meal-prep turkey mediterranean 1.5 lb ground turkey 1 large egg ½ cup panko breadcrumbs 3 garlic cloves, minced (meatballs) + extra for tzatziki 2 tsp dried oregano 1 lemon (zest for meatballs, juice for quinoa and tzatziki) salt and pepper 1.5 cups dry quinoa fresh parsley, chopped 1 english cucumber 1 pint cherry tomatoes 1 red onion 1.5 cups plain greek yogurt">
+<a href="recipes/greek-turkey-meatballs-lemon-herb-quinoa-tzatziki.html"><h2>Greek Turkey Meatballs with Lemon-Herb Quinoa &amp; Tzatziki</h2></a>
+<p class="card-meta">~5 lunch portions · ~540 kcal, 48g protein, 7g fiber per serving </p>
+<p class="card-intro">The Mediterranean one. Suggested in the Oct 4 round; set aside when turkey and Greek yogurt were ruled out that week.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">turkey</span><span class="tag">mediterranean</span></div>
+</article><article class="card" data-search="miso-glazed salmon with sesame brown rice &amp; edamame meal-prep salmon 5 × 5 oz salmon fillets 3 tbsp white miso paste 1 tbsp honey 1 tbsp low-sodium soy sauce 1 tsp grated fresh ginger 1 tsp toasted sesame oil 2 tbsp water (glaze) 1.5 cups brown rice 2.5 cups frozen shelled edamame 2 heads broccoli sesame seeds light spray of oil and salt (broccoli)">
+<a href="recipes/miso-glazed-salmon-sesame-brown-rice-edamame.html"><h2>Miso-Glazed Salmon with Sesame Brown Rice &amp; Edamame</h2></a>
+<p class="card-meta">~5 lunch portions · ~650 kcal, 45g protein, 9g fiber per serving </p>
+<p class="card-intro">Rich-tasting without heavy oil; the glaze caramelizes under the broiler. Suggested in the Oct 4 round; set aside that week.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">salmon</span></div>
+</article><article class="card" data-search="turkey chili verde with white beans meal-prep turkey one-pot freezer-friendly 1.25 lb ground turkey 2 cans white beans (cannellini), drained 24 oz jar salsa verde 1 cup frozen corn 1 yellow onion, diced 1 jalapeño, diced 2 cups low-sodium chicken broth 3 garlic cloves, minced 2 tsp cumin 1 tsp dried oregano 2 limes fresh cilantro salt to taste plain greek yogurt (dollop at lunch, instead of sour cream)">
+<a href="recipes/turkey-chili-verde-white-beans.html"><h2>Turkey Chili Verde with White Beans</h2></a>
+<p class="card-meta">~5 lunch portions · ~480 kcal, 42g protein, 11g fiber per serving </p>
+<p class="card-intro">One-pot, freezer-friendly, highest fiber of its round. Suggested in the Oct 4 round; set aside that week.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">turkey</span><span class="tag">one-pot</span><span class="tag">freezer-friendly</span></div>
+</article><article class="card" data-search="chicken tinga bowls with black beans &amp; cilantro-lime brown rice meal-prep chicken 2 lb boneless, skinless chicken thighs 7 oz chipotles in adobo sauce 28 oz fire-roasted diced tomatoes 2 cans (15 oz) black beans, drained 1 bunch fresh cilantro 4 limes 1 onion, diced 3 garlic cloves, minced 1.5 cups brown rice salt to taste">
+<a href="recipes/chicken-tinga-bowls-black-beans-cilantro-lime-rice.html"><h2>Chicken Tinga Bowls with Black Beans &amp; Cilantro-Lime Brown Rice</h2></a>
+<p class="card-meta">~5 portions · ~600 kcal, 48g protein, 13g fiber per serving </p>
+<p class="card-intro">The smoky one. Chicken thighs braised in chipotle-tomato sauce, spooned over rice with black beans.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">chicken</span></div>
+</article><article class="card" data-search="mediterranean tuna &amp; chickpea power bowls meal-prep tuna no-cook chickpea 4 cans (5 oz) albacore tuna, drained 2 cans (15 oz) chickpeas, drained 1.5 cups dry pearled farro 1 english cucumber, diced 1 pint cherry tomatoes, halved 1 cup kalamata olives 4 oz feta cheese, crumbled 2 lemons, juiced 1 small red onion, thin-sliced 3 tbsp olive oil salt, pepper, pinch of dried oregano">
+<a href="recipes/mediterranean-tuna-chickpea-power-bowls.html"><h2>Mediterranean Tuna &amp; Chickpea Power Bowls</h2></a>
+<p class="card-meta">~5 portions · ~580 kcal, 46g protein, 10g fiber per serving </p>
+<p class="card-intro">No-cook protein, lemony and briny. Hearty without being heavy.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">tuna</span><span class="tag">no-cook</span><span class="tag">chickpea</span></div>
+</article><article class="card" data-search="garlic-herb chicken thighs with cannellini beans &amp; kale meal-prep chicken one-pot 1.75 lb boneless, skinless chicken thighs 2 cans (15 oz each) cannellini beans, drained and rinsed 2 bunches lacinato kale, stems removed, leaves chopped 1 jar (8 oz) sun-dried tomatoes, drained and sliced 2 cups low-sodium chicken broth 1 sprig fresh rosemary (leaves stripped and minced), plus extra for garnish 5 garlic cloves, minced 1 tbsp olive oil 1 tsp salt, ½ tsp black pepper, ¼ tsp red pepper flakes juice of ½ lemon">
+<a href="recipes/garlic-herb-chicken-thighs-cannellini-beans-kale.html"><h2>Garlic-Herb Chicken Thighs with Cannellini Beans &amp; Kale</h2></a>
+<p class="card-meta">5 lunch portions · ~460 cal, ~40g protein, ~9g fiber, ~18g fat, ~28g carbs per serving <span class="badge cooked">Cooked ✓</span></p>
+<p class="card-intro">Braised chicken thighs with beans and kale. Cooked as the Oct 10 batch.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">chicken</span><span class="tag">one-pot</span></div>
+</article><article class="card" data-search="thai basil chicken (pad kra pao) — meal prep meal-prep chicken thai spicy 2 lb ground chicken (see note) 12–18 thai bird&#x27;s eye chilies (12 = medium heat across the batch) 15 cloves garlic 3 bell peppers, chopped into bite-size pieces 1 1/2 small yellow onions, diced 4 1/2 cups thai basil leaves, loosely packed neutral oil: a thin film for searing (skip if your skillet is nonstick) + 1 tbsp for the chili-garlic paste salt, a pinch sauce (mix in a bowl first): 3 tbsp oyster-style sauce sauce: 3 tbsp soy sauce sauce: 2 tbsp fish sauce sauce: 1 1/2 tbsp tamari (in place of dark/black soy sauce) sauce: 1 1/2 tbsp sugar sauce: 6 tbsp water to serve: 3 cups uncooked brown jasmine rice (rice cooker, brown rice setting, extra time)">
+<a href="recipes/thai-basil-chicken-pad-kra-pao.html"><h2>Thai Basil Chicken (Pad Kra Pao) — Meal Prep</h2></a>
+<p class="card-meta">6 · ~500–600 cal, ~35–40g protein per serving (with rice) <span class="badge cooked">Cooked ✓</span></p>
+<p class="card-intro">The real-deal version: chilies and garlic pounded into a paste, chicken seared hard before the sauce goes in. Salty, spicy, fragrant. Cooked Oct 12, 2026.</p>
+<div class="tags"><span class="tag">meal-prep</span><span class="tag">chicken</span><span class="tag">thai</span><span class="tag">spicy</span></div>
+</article>
+</div>
+<footer><p>Search filters by title, ingredient, and tag. Click a recipe for the full version.</p></footer>
+</main>
+<script src="assets/search.js"></script>
+</body>
+</html>
