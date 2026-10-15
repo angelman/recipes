@@ -22,6 +22,27 @@ def tag_chips(tags):
     )
 
 
+def json_ld(r):
+    """Schema.org Recipe structured data (JSON-LD) for a recipe entry."""
+    import json as _json
+
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": r["title"],
+        "description": r["intro"],
+        "recipeIngredient": r["ingredients"],
+        "recipeInstructions": [
+            {"@type": "HowToStep", "text": s} for s in r["steps"]
+        ],
+    }
+    servings = r.get("servings") or ""
+    if servings and servings != "See notes":
+        data["recipeYield"] = servings
+    # Escape any "</" sequences so the JSON can never break out of <script>.
+    return _json.dumps(data, ensure_ascii=True).replace("</", "<\\/")
+
+
 def recipe_page(r):
     nutrition = (
         f'<p class="meta-line"><strong>Per serving:</strong> {esc(r["nutrition"])}</p>'
@@ -50,6 +71,7 @@ def recipe_page(r):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(r["title"])} — Recipes</title>
 <link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{json_ld(r)}</script>
 </head>
 <body>
 <main class="recipe-page">

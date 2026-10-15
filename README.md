@@ -21,7 +21,8 @@ on a free GitHub account).
 ## Files
 
 - `index.html` — generated index page with search + tag filters.
-- `recipes/*.html` — generated one page per recipe.
+- `recipes/*.html` — generated one page per recipe. Each page carries
+  Schema.org `Recipe` structured data (JSON-LD) for portability.
 - `recipes.json` — the source of truth for all recipes.
 - `build.py` — regenerates the pages from `recipes.json`.
 - `assets/` — stylesheet and client-side search script.
