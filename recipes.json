@@ -85,7 +85,7 @@
       "title": "One-Pan Chicken & Rice (Arroz con Pollo)"
     },
     {
-      "attribution": "By Brita (britacooks) — https://britacooks.com/short-rib-coconut-curry-brothy-rice-bowls/",
+      "attribution": "By Brita (britacooks)",
       "cooked": false,
       "delivered": "Sept 28, 2026",
       "ingredients": [
@@ -113,6 +113,7 @@
       "nutrition": null,
       "servings": "See notes",
       "slug": "spicy-short-rib-coconut-curry-brothy-rice-bowls",
+      "source_url": "https://britacooks.com/short-rib-coconut-curry-brothy-rice-bowls/",
       "steps": [
         "Trim excess fat from the short ribs and season generously with kosher salt on all sides. Set the pressure cooker to sauté, add the oil, and sear the ribs deeply on all sides until well browned. Transfer to a plate.",
         "Drain most of the rendered fat, leaving about a tablespoon. Add the red curry paste and cook 2–3 minutes, stirring frequently and scraping up the browned bits, until slightly darkened and fragrant.",
@@ -210,7 +211,7 @@
       "title": "Garlic-Herb Chicken Thighs with Cannellini Beans & Kale"
     },
     {
-      "attribution": "Adapted from Hot Thai Kitchen's pad kra pao — http://hot-thai-kitchen.com/holy-basil-stir-fry/",
+      "attribution": "Adapted from Hot Thai Kitchen's pad kra pao",
       "cooked": true,
       "delivered": "Oct 12, 2026 (adapted from Hot Thai Kitchen's pad kra pao, scaled ×3)",
       "ingredients": [
@@ -242,6 +243,7 @@
       "nutrition": "~500–600 cal, ~35–40g protein per serving (with rice)",
       "servings": "6",
       "slug": "thai-basil-chicken-pad-kra-pao",
+      "source_url": "http://hot-thai-kitchen.com/holy-basil-stir-fry/",
       "steps": [
         "Start the rice first — brown jasmine takes a while. Use your cooker's brown rice setting.",
         "Pound the chilies into a fine paste with a mortar and pestle. Add the garlic and pound into a rough paste. (No mortar? Mince both as finely as you can — the paste is what makes it fragrant.)",
@@ -320,6 +322,51 @@
         "curry"
       ],
       "title": "Chicken Tikka Masala"
+    },
+    {
+      "attribution": "By Nagi — RecipeTin Eats",
+      "cooked": false,
+      "delivered": "Oct 17, 2026",
+      "ingredients": [
+        "5–6 beef short ribs, 300–400 g / 10–14 oz each",
+        "1½ tsp each salt and pepper",
+        "2 tbsp olive oil",
+        "3 garlic cloves, crushed",
+        "1 large onion, chopped (brown, yellow, or white)",
+        "2 celery ribs, chopped",
+        "2 carrots, chopped",
+        "2 tbsp tomato paste",
+        "2 cups (500 ml) dry red wine",
+        "2 cups (500 ml) beef stock/broth, low sodium",
+        "2 sprigs thyme (optional)",
+        "2 bay leaves"
+      ],
+      "intro": "Fall-apart beef short ribs braised in a red wine sauce. Simple ingredients, mostly hands-off — oven is best, but stove, slow cooker, and pressure cooker all work.",
+      "notes": [
+        "Other cook methods: stove — 2.5 hours on a low simmer, lid on; slow cooker — 8 hours on low or 5 hours on high (sear and sauté first, then reduce the strained sauce in a skillet); pressure cooker — 1 hour on high, natural release 10 minutes.",
+        "Non-alcoholic substitute for the 2 cups wine: non-alcoholic wine, or ½ cup extra low-sodium beef broth + 1½ cups water + 1 tbsp Worcestershire sauce.",
+        "Wine: a good-value full-bodied red (cabernet sauvignon, merlot, or shiraz). No need for an expensive bottle; pinot is too light.",
+        "The sauce reduces by about half and should reach a syrupy consistency. If it's too fatty, let it sit in a jug so the fat rises, then skim it off.",
+        "Also works with other slow-cooking cuts (chuck cut into large pieces, shanks, osso buco, brisket) — adjust time to the size of the meat."
+      ],
+      "nutrition": "~545 cal, ~44g protein per serving (assumes all sauce consumed)",
+      "servings": "5",
+      "slug": "braised-beef-short-ribs-red-wine-sauce",
+      "source_url": "https://www.recipetineats.com/braised-beef-short-ribs-in-red-wine-sauce/",
+      "steps": [
+        "Heat the oven to 160°C / 325°F. Season the ribs all over with the salt and pepper.",
+        "Brown the ribs aggressively on all sides in the oil in a large ovenproof pot, working in batches. Remove and set aside.",
+        "In the same pot over medium heat, cook the onion and garlic for 2 minutes, then add the carrot and celery and cook 5 minutes until the carrot softens. Stir in the tomato paste and cook 1 minute.",
+        "Pour in the wine and stock, add the thyme and bay leaves, and stir until the tomato paste dissolves.",
+        "Return the ribs to the pot, arranging them submerged as best you can. Cover and braise in the oven for 3 hours, until the meat pulls apart easily with forks.",
+        "Lift the ribs out carefully and keep warm. Strain the sauce (optional, for a smooth sauce), return it to the pot, and simmer to reduce and thicken; season with salt and pepper. Spoon over the ribs and serve."
+      ],
+      "tags": [
+        "beef",
+        "braised",
+        "slow-cook"
+      ],
+      "title": "Braised Beef Short Ribs in Red Wine Sauce"
     }
   ]
 }

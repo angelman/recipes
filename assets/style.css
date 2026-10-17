@@ -89,6 +89,7 @@ a:hover { text-decoration: underline; }
 .back { margin-bottom: 1rem; }
 .meta-line { margin: 0.2rem 0; }
 .attribution { color: var(--muted); font-style: italic; }
+.source { color: var(--muted); font-size: 0.85rem; margin: 0.2rem 0; }
 .intro { font-size: 1.05rem; }
 .ingredients li, .steps li { margin-bottom: 0.4rem; }
 .steps li { padding-left: 0.25rem; }

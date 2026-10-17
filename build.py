@@ -39,6 +39,8 @@ def json_ld(r):
     servings = r.get("servings") or ""
     if servings and servings != "See notes":
         data["recipeYield"] = servings
+    if r.get("source_url"):
+        data["isBasedOn"] = r["source_url"]
     # Escape any "</" sequences so the JSON can never break out of <script>.
     return _json.dumps(data, ensure_ascii=True).replace("</", "<\\/")
 
@@ -54,6 +56,15 @@ def recipe_page(r):
         if r.get("attribution")
         else ""
     )
+    source = ""
+    if r.get("source_url"):
+        from urllib.parse import urlparse
+
+        domain = urlparse(r["source_url"]).netloc.replace("www.", "")
+        source = (
+            f'<p class="source">Source: '
+            f'<a href="{esc(r["source_url"])}">{esc(domain)}</a></p>'
+        )
     cooked = (
         '<span class="badge cooked">Cooked ✓</span>' if r.get("cooked") else ""
     )
@@ -81,6 +92,7 @@ def recipe_page(r):
 {nutrition}
 <p class="meta-line"><strong>From:</strong> {esc(r["delivered"])}</p>
 {attribution}
+{source}
 <div class="tags">{tag_chips(r["tags"])}</div>
 <p class="intro">{esc(r["intro"])}</p>
 <h2>Ingredients</h2>
