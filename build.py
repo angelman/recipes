@@ -33,7 +33,9 @@ def json_ld(r):
         "description": r["intro"],
         "recipeIngredient": r["ingredients"],
         "recipeInstructions": [
-            {"@type": "HowToStep", "text": s} for s in r["steps"]
+            {"@type": "HowToStep", "text": s}
+            for s in r["steps"]
+            if not s.startswith("SECTION: ")
         ],
     }
     servings = r.get("servings") or ""
@@ -69,7 +71,27 @@ def recipe_page(r):
         '<span class="badge cooked">Cooked ✓</span>' if r.get("cooked") else ""
     )
     ingredients = "".join(f"<li>{esc(i)}</li>" for i in r["ingredients"])
-    steps = "".join(f"<li>{esc(s)}</li>" for s in r["steps"])
+    # A step starting with "SECTION: " renders as a subheading, not a
+    # numbered step, with numbering continuing across sections.
+    steps_html = []
+    step_no = 0
+    in_list = False
+    for s in r["steps"]:
+        if s.startswith("SECTION: "):
+            if in_list:
+                steps_html.append("</ol>")
+                in_list = False
+            steps_html.append(f"<h3>{esc(s[len('SECTION: '):])}</h3>")
+        else:
+            if not in_list:
+                start = f' start="{step_no + 1}"' if step_no else ""
+                steps_html.append(f'<ol class="steps"{start}>')
+                in_list = True
+            steps_html.append(f"<li>{esc(s)}</li>")
+            step_no += 1
+    if in_list:
+        steps_html.append("</ol>")
+    steps = "".join(steps_html)
     notes = ""
     if r.get("notes"):
         notes = "<h2>Notes</h2><ul>" + "".join(
@@ -98,7 +120,7 @@ def recipe_page(r):
 <h2>Ingredients</h2>
 <ul class="ingredients">{ingredients}</ul>
 <h2>Steps</h2>
-<ol class="steps">{steps}</ol>
+{steps}
 {notes}
 <p class="back"><a href="../index.html">← All recipes</a></p>
 </main>

@@ -86,6 +86,7 @@ a:hover { text-decoration: underline; }
 .badge.cooked { background: #e3f2e6; color: #2e6b3a; }
 
 .recipe-page { max-width: 720px; }
+.recipe-page h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
 .back { margin-bottom: 1rem; }
 .meta-line { margin: 0.2rem 0; }
 .attribution { color: var(--muted); font-style: italic; }
