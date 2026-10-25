@@ -84,6 +84,9 @@ a:hover { text-decoration: underline; }
   padding: 0.1rem 0.55rem;
 }
 .badge.cooked { background: #e3f2e6; color: #2e6b3a; }
+.badge.difficulty-easy { background: #e3f2e6; color: #2e6b3a; }
+.badge.difficulty-medium { background: #fdf0d5; color: #8a6d00; }
+.badge.difficulty-hard { background: #fde8e8; color: #9b2c2c; }
 
 .recipe-page { max-width: 720px; }
 .recipe-page h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }

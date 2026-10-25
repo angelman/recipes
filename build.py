@@ -70,6 +70,14 @@ def recipe_page(r):
     cooked = (
         '<span class="badge cooked">Cooked ✓</span>' if r.get("cooked") else ""
     )
+    difficulty = ""
+    if r.get("difficulty"):
+        level = esc(r["difficulty"])
+        difficulty = (
+            f'<p class="meta-line"><strong>Difficulty:</strong> '
+            f'<span class="badge difficulty-{level.lower()}">'
+            f"{level.capitalize()}</span></p>"
+        )
     ingredients = "".join(f"<li>{esc(i)}</li>" for i in r["ingredients"])
     # A step starting with "SECTION: " renders as a subheading, not a
     # numbered step, with numbering continuing across sections.
@@ -111,6 +119,7 @@ def recipe_page(r):
 <p class="back"><a href="../index.html">← All recipes</a></p>
 <h1>{esc(r["title"])} {cooked}</h1>
 <p class="meta-line"><strong>Servings:</strong> {esc(r["servings"])}</p>
+{difficulty}
 {nutrition}
 <p class="meta-line"><strong>From:</strong> {esc(r["delivered"])}</p>
 {attribution}
@@ -136,14 +145,25 @@ def index_page(recipes):
             '<span class="badge cooked">Cooked ✓</span>' if r.get("cooked") else ""
         )
         nutrition = esc(r["nutrition"]) if r.get("nutrition") else ""
+        difficulty = (
+            f'<span class="badge difficulty-{esc(r["difficulty"].lower())}">'
+            f"{esc(r['difficulty'].capitalize())}</span> "
+            if r.get("difficulty")
+            else ""
+        )
         search_text = esc(
             " ".join(
-                [r["title"], " ".join(r["tags"]), " ".join(r["ingredients"])]
+                [
+                    r["title"],
+                    r.get("difficulty", ""),
+                    " ".join(r["tags"]),
+                    " ".join(r["ingredients"]),
+                ]
             ).lower()
         )
         cards.append(f"""<article class="card" data-search="{search_text}">
 <a href="recipes/{esc(r["slug"])}.html"><h2>{esc(r["title"])}</h2></a>
-<p class="card-meta">{esc(r["servings"])} · {nutrition} {cooked}</p>
+<p class="card-meta">{difficulty}{esc(r["servings"])} · {nutrition} {cooked}</p>
 <p class="card-intro">{esc(r["intro"])}</p>
 <div class="tags">{tag_chips(r["tags"])}</div>
 </article>""")

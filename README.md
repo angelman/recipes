@@ -14,7 +14,8 @@ on a free GitHub account).
 
 1. Append an entry to `recipes.json` (copy an existing entry's shape:
    `slug`, `title`, `servings`, `nutrition`, `ingredients`, `steps`,
-   `notes`, `tags`, `cooked`, `delivered`, `intro`, `attribution`).
+   `notes`, `tags`, `cooked`, `delivered`, `intro`, `attribution`,
+   `difficulty` — one of `easy`, `medium`, `hard`).
 2. Run `python3 build.py` to regenerate `index.html` and the recipe pages.
 3. Commit everything.
 
