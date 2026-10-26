@@ -469,6 +469,61 @@
         "high-fiber"
       ],
       "title": "Chicken Shawarma Bowls"
+    },
+    {
+      "attribution": null,
+      "cooked": false,
+      "delivered": "Oct 25, 2026",
+      "difficulty": "hard",
+      "ingredients": [
+        "1 pavo de 10 a 14 libras",
+        "2 o 3 sobrecitos de Saz\u00f3n Goya con culantro y achiote",
+        "2 cucharadas de jugo de lim\u00f3n",
+        "1 sobrecito de cubitos en polvo Goya de pollo (hace dos tazas de caldo de pollo); puedes usar cubitos de pollo",
+        "Adobo Goya al gusto",
+        "1 sobrecito de Saz\u00f3n Goya con culantro y achiote (para el relleno)",
+        "1/4 taza de leche",
+        "1/2 taza de pasas",
+        "1/8 libra de mantequilla o margarina",
+        "1/2 taza de nueces o almendras picadas",
+        "1 cebolla grande",
+        "1/2 taza de vino seco",
+        "1 libra de carne molida de cerdo o de res",
+        "2 huevos duros picaditos",
+        "1 sobrecito de Sabor a Jam\u00f3n Goya (puedes usar jam\u00f3n de cocinar)",
+        "2 cucharaditas de sal",
+        "1/2 taza de salsa de manzana",
+        "5 rebanadas de pan de molde sin corteza",
+        "Gandinga, molleja y el cuello del pavo",
+        "Sofrito",
+        "1 lata de Mushroom Cream (Campbell's)",
+        "1 sobre de Saz\u00f3n con achiote"
+      ],
+      "intro": "Pavo tradicional a lo \u201cAbuelita\u201d con Saz\u00f3n Goya, culantro y achiote, con relleno y gravy a lo \u201cUchi\u201d, en su espa\u00f1ol original.",
+      "notes": [
+        "El documento original no indica tiempo ni temperatura de horneado para el pavo en s\u00ed; solo dice adobarlo el d\u00eda anterior y hornear el relleno sobrante por 1 hora junto con el pavo."
+      ],
+      "servings": "See notes",
+      "slug": "tradicional-pavo-a-la-goya",
+      "steps": [
+        "SECTION: Adobo para el pavo (el d\u00eda anterior)",
+        "El d\u00eda anterior, pon el pavo en un molde de hornear y ad\u00f3balo a tu gusto con el Adobo Goya y el jugo de lim\u00f3n.",
+        "A\u00f1ade 1 o 2 sobresitos de Saz\u00f3n Goya con culantro y achiote por fuera y fr\u00f3taselos. A\u00f1ade otro sobrecito de Saz\u00f3n Goya con culantro y achiote por la cavidad interior del pavo.",
+        "SECTION: Relleno",
+        "En una sart\u00e9n grande, derrite la mantequilla y sofr\u00ede la cebolla bien picadita por unos minutos. A\u00f1ade la carne molida de res o cerdo y revu\u00e9lvelo bien.",
+        "Remoja el pan en la leche y a\u00f1\u00e1delos tambi\u00e9n junto con las pasas, nueces y almendras y los huevos duros picaditos. Revu\u00e9lvelos nuevamente. Echa el vino seco y el sobrecito de Saz\u00f3n Goya con culantro y achiote y a\u00f1ade la sal.",
+        "Por \u00faltimo a\u00f1ade tambi\u00e9n la salsa de manzana. Coc\u00ednalo por 5 minutos a fuego mediano, tapado. Si te sobra relleno, horn\u00e9alo por 1 hora junto con el pavo.",
+        "SECTION: Gravy a lo \u201cUchi\u201d",
+        "La gandinga, molleja y el cuello del pavo se hierven con sofrito. Cuando est\u00e9 cocinado, s\u00e1cale el cuero al cuello y s\u00e1cale la carne.",
+        "La molleja, gandinga y la carne del cuello se parten en pedacitos peque\u00f1os, se muelen en la licuadora con un poco del caldo en donde se hirvi\u00f3, sin que quede muy blandito (que quede espeso).",
+        "Esta mezcla se echa en una cacerola y le a\u00f1ades el Mushroom Cream (Campbell's). Se pone a hervir, le echas saz\u00f3n con achiote y le echas un poco de la grasita del pavo cocinado, al gusto. Y est\u00e1 listo para servir."
+      ],
+      "tags": [
+        "turkey",
+        "spanish",
+        "holiday"
+      ],
+      "title": "Pavo Tradicional a lo \u201cAbuelita\u201d con Saz\u00f3n Goya"
     }
   ]
 }

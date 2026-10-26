@@ -184,7 +184,7 @@ def index_page(recipes):
 <main>
 <header>
 <h1>Recipes</h1>
-<p class="subtitle">Every recipe Scout has made for Angel — {len(recipes)} recipes, all in one place.</p>
+<p class="subtitle">Angel's recipe collection</p>
 </header>
 <div class="search-wrap">
 <input id="search" type="search" placeholder="Search recipes, ingredients, tags…" aria-label="Search recipes">
